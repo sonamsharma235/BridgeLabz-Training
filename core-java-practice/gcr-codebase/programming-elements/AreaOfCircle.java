@@ -1,5 +1,5 @@
 import java.util.*;
-public class main{
+public class AreaOfCircle{
     public static void main(String []args){
         Scanner sc=new Scanner(System.in);
         int pi=3.14;
