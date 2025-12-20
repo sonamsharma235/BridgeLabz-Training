@@ -71,3 +71,17 @@ Created a sample program: FizzBuzz.java
 Organized all work under:
 core-java-practice/gcr-codebase/control-flow
 
+🔹 Day 5 – 20 December 2025
+
+Array Concepts – Level 1 & Level 2 :
+
+.The focus of Day 5 was on arrays in Java.
+.Completed Level 1 and Level 2 assignments for arrays
+.Learn traversel on array
+
+Created a sample program: FizzBuzz.java
+
+Organized all work under:
+core-java-practice/gcr-codebase/arrays
+
+
