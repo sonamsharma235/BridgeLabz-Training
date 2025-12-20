@@ -1,1 +1,73 @@
 # BridgeLabz-Training
+
+Bridgelabz Java Training – Capgemini
+
+Name: Sonam Sharma Training Program: Bridgelabz – Capgemini Start Date: 16 December 2025
+
+BRIDGELABZ-TRAINING
+│
+├── core-java-practice
+│   ├── gcr-codebase
+│   │   ├── programming-elements
+│   │   ├── control-flow
+│   │   ├── leet-code-codebase
+│   │   ├── scenario-based
+│
+└── README.md
+
+🔹 Day 1 – 16 December 2025
+
+Getting Started with Java & Version Control:
+
+.The first day focused on understanding the basic tools and environment required for the training.
+.Set up the Java development environment
+.Learned the basics of Git and GitHub
+.Understood how version control helps in tracking changes
+.Got familiar with collaboration workflows using Git
+.Introduction to project structure and clean coding practices
+
+🔹 Day 2 – 17 December 2025
+
+Project Organization & Structure:
+
+.The second day emphasized maintaining a clean and scalable project structure.
+.Created the main training project structure
+.Organized Java practice inside core-java-practice
+.Maintained a modular structure inside gcr-codebase
+.Created separate directories for:
+.Programming Elements
+  .Control Flow
+  .LeetCode Practice
+  .Scenario-Based Problems
+
+.Focused on readability, maintainability, and future scalability
+
+🔹 Day 3 – 18 December 2025
+
+Programming Elements – Level 1 & Level 2:
+
+.On this day, I worked on strengthening Java fundamentals through hands-on assignments.
+.Completed Level 1 and Level 2 tasks of Programming Elements
+.Practiced variables and primitive data types
+.Used operators for calculations and logic
+.Implemented input/output using Java
+.Improved understanding of Java syntax and program flow
+
+Stored all solutions under:
+core-java-practice/gcr-codebase/programming-elements
+
+🔹 Day 4 – 19 December 2025
+
+Control Flow Concepts – Level 1 & Level 2 & Level 3:
+
+.The focus of Day 4 was on decision-making and loops in Java.
+.Completed Level 1 and Level 2 assignments for Control Flow
+.Implemented conditional statements (if, if-else, switch)
+.Practiced loops (for, while, do-while)
+.Developed programs with logical execution flow
+
+Created a sample program: FizzBuzz.java
+
+Organized all work under:
+core-java-practice/gcr-codebase/control-flow
+
