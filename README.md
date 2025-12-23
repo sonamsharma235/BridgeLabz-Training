@@ -84,4 +84,18 @@ Created a sample program: FizzBuzz.java
 Organized all work under:
 core-java-practice/gcr-codebase/arrays
 
+🔹 Day 6 – 21 December 2025
+
+String Concepts – Theory Concepts & Level 1 :
+
+.The focus of Day 6 was on String in Java.
+.Completed Theory Concepts and Level 1 assignments for String
+.Learn many functions of string like charAt(), length() etc.
+.also learn about exception handling and used in coding problems
+
+Created a sample program: subuString.java
+
+Organized all work under:
+core-java-practice/gcr-codebase/strings
+
 
