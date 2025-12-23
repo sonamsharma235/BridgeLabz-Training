@@ -98,4 +98,16 @@ Created a sample program: subuString.java
 Organized all work under:
 core-java-practice/gcr-codebase/strings
 
+🔹 Day 7 – 22 December 2025
+
+String Concepts – Level 2 & Level 3 :
+
+.Done 2 coding assignments of string and exception handling
+.which consists different conditional statements ,loops, string methods
+
+Created a sample program: FrequencyCount.java
+
+Organized all work under:
+core-java-practice/gcr-codebase/string
+
 
