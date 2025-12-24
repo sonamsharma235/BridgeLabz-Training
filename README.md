@@ -1,8 +1,8 @@
 # BridgeLabz-Training
 
-Bridgelabz Java Training – Capgemini
+Bridgelabz Java Training
 
-Name: Sonam Sharma Training Program: Bridgelabz – Capgemini Start Date: 16 December 2025
+Name: Sonam Sharma Training Program: Bridgelabz Training Start Date: 16 December 2025
 
 BRIDGELABZ-TRAINING
 │
