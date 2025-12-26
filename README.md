@@ -110,4 +110,27 @@ Created a sample program: FrequencyCount.java
 Organized all work under:
 core-java-practice/gcr-codebase/string
 
+🔹 Day 9 – 24 December 2025
+
+Methods Concepts – Level 1 & Level 2 :
+
+.The focus of Day 9 was on Methods in Java.
+.Completed Theory Concepts and learn many methods in java and also completed Level 1 assignments for methods
+.Learn many methods in java 
+.also done many problems 
+
+Created a sample program: subuString.java
+
+Organized all work under:
+core-java-practice/gcr-codebase/methods
+
+🔹 Day 10 – 25 December 2025
+
+Methods Concepts – Level 3 :
+
+.completed level 3 problems of methods
+
+Organized all work under:
+core-java-practice/gcr-codebase/methods
+
 
