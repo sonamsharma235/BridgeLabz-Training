@@ -133,4 +133,15 @@ Methods Concepts – Level 3 :
 Organized all work under:
 core-java-practice/gcr-codebase/methods
 
+🔹 Day 11 – 26 December 2025
+
+String Problems and Scenerio-based :
+
+. completed string practice problems 
+. completed 2 scenerio-based problems
+
+Organized all work under:
+core-java-practice/gcr-codebase/strings
+core-java-practice/scenerio-based
+
 
