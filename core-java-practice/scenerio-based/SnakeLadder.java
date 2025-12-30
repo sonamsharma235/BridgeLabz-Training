@@ -4,7 +4,11 @@ public class SnakeLadder {
 
         //UC 1
         int posOfplayer1=0;
-
+         //UC 2
+        Random random=new Random();
+        int die=random.nextInt(6)+1;
+        
+        
     }
     
 }
