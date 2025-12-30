@@ -52,9 +52,25 @@ public class EmployeeWageComputation{
 
         //UC 5
         int monthlyWage=0;
+        int working_Days=sc.nextInt();
 
-        for(int day=1;day<=20;day++){
-            monthlyWage+=wage_per_hour*full_day_hour;
+        for(int day=1;day<=working_Days;day++){
+          empType=random.nextInt();
+          switch(empType){
+            case is_part_time:
+                empHours=4;
+                System.out.println("part time employee");
+                break;
+            case is_full_time:
+                empHours=8;
+                System.out.println("full time employee");
+                break;    
+            default:
+                empHours=0;
+                System.out.println("employee absent");    
+         }
+            daily_wage=empHours*wage_per_hour;
+            monthlyWage+=daily_wage;
         }
         System.out.println("monthly wage ="+monthlyWage);
 
