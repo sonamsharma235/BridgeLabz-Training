@@ -144,4 +144,18 @@ Organized all work under:
 core-java-practice/gcr-codebase/strings
 core-java-practice/scenerio-based
 
+🔹 Day 12 – 29 December 2025
+
+Scenerio-based :
+. done scenerio based problems
+.that was like real world problems
+.like - movie ticket, gaming problems
+
+Organized all work under:
+core-java-practice/scenerio-based
+
+
+
+
+
 
