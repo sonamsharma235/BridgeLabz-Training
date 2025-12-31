@@ -109,3 +109,16 @@ Scenerio-based and oops-practice :
 Organized all work under: 
 core-java-practice/scenerio-based
 oops-practice/gcr-codebase/class-object
+
+🔹 Day 14 – 31 December 2025
+
+oops-practice :
+ .learn about constructor , access modifiers 
+ .that was like real world problems 
+ .like- movie rental , car renta etc. 
+ .done with the oops  material 
+ .completed assignment of constructor and access modifiers problems
+
+Organized all work under: 
+oops-practice/gcr-codebase/constructor
+
