@@ -134,5 +134,20 @@ oops-practice :
 Organized all work under: 
 oops-practice/gcr-codebase/keywords
 
+🔹 Day 16 – 2 january 2026
+
+oops-practice :
+ .learn about differnt types of diagram like-class diagram, sequence diagram etc.
+ .that was like real world understanding diagram
+ .like-  university student diagram etc.
+ .done with the material of diagrams etc.   
+ .completed assignment of diagrams
+ .completed scenerio based problems
+ .like-temperature analyzer,  studentScore Analyzer
+
+Organized all work under: 
+oops-practice/gcr-codebase/oops-diagram
+oops-practice/gcr-codebase/scenerio-based
+
 
 
