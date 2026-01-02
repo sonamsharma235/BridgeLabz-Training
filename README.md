@@ -122,3 +122,17 @@ oops-practice :
 Organized all work under: 
 oops-practice/gcr-codebase/constructor
 
+🔹 Day 15 – 1 january 2026
+
+oops-practice :
+ .learn about this keywords, instance of object , access modifier ,, static 
+ .that was like real world problems 
+ .like-  Employee management, library management etc.
+ .done with the material of keywords etc.   
+ .completed assignment of static final keywords and instance of object 
+
+Organized all work under: 
+oops-practice/gcr-codebase/keywords
+
+
+
