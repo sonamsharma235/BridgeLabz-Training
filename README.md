@@ -149,5 +149,21 @@ Organized all work under:
 oops-practice/gcr-codebase/oops-diagram
 oops-practice/gcr-codebase/scenerio-based
 
+🔹 Day 17 – 3 january 2026
+
+oops-practice :
+ .learn about differnt types of inheritances like- single , multilevel, hirerical , hybrid inheritance.
+ .learn about Is-A , Has- A relationship .
+ .that was like real world understanding problems
+ .like-  bankManagemnet, schoolsystem etc.
+ .done with the material of inheritance etc.   
+ .completed assignment of inheritance
+ .completed scenerio based problems
+ .like-EduQuiz, StudentScore etc.
+
+Organized all work under: 
+oops-practice/gcr-codebase/oops-diagram
+oops-practice/gcr-codebase/scenerio-based
+
 
 
