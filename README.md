@@ -162,8 +162,25 @@ oops-practice :
  .like-EduQuiz, StudentScore etc.
 
 Organized all work under: 
-oops-practice/gcr-codebase/oops-diagram
+oops-practice/gcr-codebase/gcr-codebase/inheritance
 oops-practice/gcr-codebase/scenerio-based
+
+🔹 Day 18 – 5 january 2026
+
+oops-practice :
+ .learn about differnt types of Polymorphism, abstraction, encapsulation
+ .done with the material of these oops pillars etc.   
+ .completed scenerio based problems on these concepts
+ .like-InvoicsGenerator, PhoneContactOrganization etc.
+ .completed a assignment of encapsulation
+ . Also completed 2 leetcode problems
+
+Organized all work under: 
+oops-practice/gcr-codebase/leet-code-codebase
+oops-practice/gcr-codebase/scenerio-based
+
+
+
 
 
 
