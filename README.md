@@ -179,6 +179,19 @@ Organized all work under:
 oops-practice/gcr-codebase/leet-code-codebase
 oops-practice/gcr-codebase/scenerio-based
 
+🔹 Day 19 – 6 january 2026
+
+oops-practice :  
+ .completed scenerio based problems on oops concepts
+ .like-LibraryManagementSystem, StudentScoreAnalyzer etc.
+ .Also learn concept of exception handling and use it in problems
+ .completed a assignment of encapsulation
+ . Also completed 2 leetcode problems
+
+Organized all work under:
+oops-practice/gcr-codebase/gcr-codebase/encapsulationAbstraction
+oops-practice/gcr-codebase/leet-code-codebase
+oops-practice/gcr-codebase/scenerio-based
 
 
 
