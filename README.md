@@ -193,6 +193,18 @@ oops-practice/gcr-codebase/gcr-codebase/encapsulationAbstraction
 oops-practice/gcr-codebase/leet-code-codebase
 oops-practice/gcr-codebase/scenerio-based
 
+🔹 Day 20 – 7 january 2026
+
+oops-practice :  
+ .completed 2 story-scenerio based problems on oops concepts
+ .like-carRiding System , Banking transaction system etc.
+ .Also used concept of exception handling 
+ .Also apply CRUD operations in the problems
+ .and apply almost all the concepts of oops like- inheritance, encapsulation, polymrphism
+
+Organized all work under:
+oops-practice/gcr-codebase/scenerio-based/storyScenerio
+
 
 
 
