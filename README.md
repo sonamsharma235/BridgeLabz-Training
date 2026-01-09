@@ -207,7 +207,7 @@ oops-practice :
 Organized all work under:
 oops-practice/gcr-codebase/scenerio-based/storyScenerio
 
-🔹 Day 20 – 8 january 2026
+🔹 Day 21 – 8 january 2026
 
 dsa-practice : 
  . read and learn the dsa concept of linkedlist and its types
