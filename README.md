@@ -218,3 +218,13 @@ dsa-practice :
 
 Organized all work under:
 dsa-practice/gcr-codebase/linkedlist
+
+🔹 Day 22 – 9 january 2026
+
+dsa-practice : 
+ .completed  scenerio based problems 
+ .like-Vehicle renting syaytem, SocialMediaApp  etc.
+ .Also apply CRUD operations in the problems
+
+Organized all work under:
+dsa-practice/scenerio-based
