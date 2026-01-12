@@ -205,6 +205,26 @@ oops-practice :
 Organized all work under:
 oops-practice/gcr-codebase/scenerio-based/storyScenerio
 
+🔹 Day 21 – 8 january 2026
 
+dsa-practice : 
+ . read and learn the dsa concept of linkedlist and its types
+ .like- singly linkedlist, doubly linkedlist, circular linkedlist
+ .completed 3 scenerio based problems on each type of linkedlist
+ .like-MovieManagementSystem, SocialMediaApp, TicketReservationDemo etc.
+ .Also apply CRUD operations in the problems
+
+Organized all work under:
+dsa-practice/gcr-codebase/linkedlist
+
+🔹 Day 22 – 9 january 2026
+
+dsa-practice : 
+ .completed  scenerio based problems 
+ .like-Vehicle renting syaytem, SocialMediaApp  etc.
+ .Also apply CRUD operations in the problems
+
+Organized all work under:
+dsa-practice/scenerio-based
 
 
