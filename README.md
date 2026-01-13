@@ -227,4 +227,29 @@ dsa-practice :
 Organized all work under:
 dsa-practice/scenerio-based
 
+🔹 Day 22 – 12 january 2026
+
+dsa-practice : 
+ .completed  scenerio based problems 
+ .like-ECommerce System, Coyrse Registration System  etc.
+ .Also apply CRUD operations in the problems
+
+Organized all work under:
+dsa-practice/scenerio-based
+
+🔹 Day 23 – 13 january 2026
+
+dsa-practice : 
+ .completed  scenerio based problems 
+ .like-Car Rental System , Online Voting System etc.
+ .Also apply CRUD operations in the problems
+ . also go through the material of dsa algorithms like- stack , queue etc.
+
+Organized all work under:
+dsa-practice/scenerio-based
+
+
+
+
+
 
