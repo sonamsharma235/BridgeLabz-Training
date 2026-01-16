@@ -273,3 +273,15 @@ dsa-practice :
 
 Organized all work under:
 dsa-practice/gcr-codebase/sorting
+
+🔹 Day 27 – 16 january 2026
+
+dsa-practice : 
+ .done with the material of searching algorihtms 
+ .learn about stringbuffer, stringbuilder and string 
+ .Also complete some problems on that
+ .learn different types of searching algos like- linear search, binary search
+ .complete problems based on searching algorithms
+
+Organized all work under:
+dsa-practice/gcr-codebase/searching
