@@ -51,7 +51,10 @@ Organized all work under: core-java-practice/gcr-codebase/arrays
 
 String Concepts – Theory Concepts & Level 1 :
 
-.The focus of Day 6 was on String in Java. .Completed Theory Concepts and Level 1 assignments for String .Learn many functions of string like charAt(), length() etc. .also learn about exception handling and used in coding problems
+.The focus of Day 6 was on String in Java. 
+.Completed Theory Concepts and Level 1 assignments for String
+.Learn many functions of string like charAt(), length() etc.
+.also learn about exception handling and used in coding problems
 
 Created a sample program: subuString.java
 
@@ -229,7 +232,7 @@ dsa-practice :
 Organized all work under:
 dsa-practice/scenerio-based
 
-🔹 Day 22 – 12 january 2026
+🔹 Day 23 – 12 january 2026
 
 dsa-practice : 
  .completed  scenerio based problems 
@@ -239,7 +242,7 @@ dsa-practice :
 Organized all work under:
 dsa-practice/scenerio-based
 
-🔹 Day 23 – 13 january 2026
+🔹 Day 24 – 13 january 2026
 
 dsa-practice : 
  .completed  scenerio based problems 
@@ -250,7 +253,7 @@ dsa-practice :
 Organized all work under:
 dsa-practice/scenerio-based
 
-🔹 Day 24 – 14 january 2026
+🔹 Day 25 – 14 january 2026
 
 dsa-practice : 
  .done with the material of hashmap, hashset, stack and queue
@@ -261,7 +264,7 @@ dsa-practice :
 Organized all work under:
 dsa-practice/gcr-codebase/hashMapStackQueue
 
-🔹 Day 25 – 15 january 2026
+🔹 Day 26 – 15 january 2026
 
 dsa-practice : 
  .done with the material of sorting algorihtms 
