@@ -260,3 +260,13 @@ dsa-practice :
 
 Organized all work under:
 dsa-practice/gcr-codebase/hashMapStackQueue
+
+🔹 Day 25 – 15 january 2026
+
+dsa-practice : 
+ .done with the material of sorting algorihtms 
+ .learn different types of sorting algos like- counting sort, heap sort, merge sort etc.
+ .complete problems based on sorting algorithms
+
+Organized all work under:
+dsa-practice/gcr-codebase/sorting
