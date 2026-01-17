@@ -88,6 +88,17 @@ public class ContactService {
     		System.out.println("enter valid name");
     	}
     }
+
+	// UseCase-4: delete contact
+    //delete contact
+    public void deleteContacts(String name) {
+    	for(ContactModel c:dao.addressBook) {
+    		if(c.getFirstName().equals(name)) {
+    			dao.addressBook.remove(c);
+    			System.out.println("contact deleted");
+    		}
+    	}	
+    }
     
     //display contacts 
     public void displayContacts() {
