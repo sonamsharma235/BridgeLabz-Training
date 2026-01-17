@@ -1,6 +1,5 @@
 package addressBook;
 
-//UC-1
 public class ContactModel {
     private String firstName;
     private String lastName;
