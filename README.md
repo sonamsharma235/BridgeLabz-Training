@@ -285,3 +285,14 @@ dsa-practice :
 
 Organized all work under:
 dsa-practice/gcr-codebase/searching
+
+🔹 Day 29 – 20 january 2026
+
+dsa-practice : 
+ .completed  scenerio based problems 
+ .like-bankingAccount , bookself etc.
+ .Also apply CRUD operations in the problems
+ . used stack , queue, linkedlist in it.
+
+Organized all work under:
+dsa-practice/scenerio-based
