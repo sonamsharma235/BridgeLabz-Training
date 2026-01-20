@@ -248,6 +248,18 @@ dsa-practice :
 Organized all work under:
 dsa-practice/scenerio-based
 
+🔹 Day 23 – 17 january 2026
+
+oops-practice : 
+ . there is problem address book
+ .completed  scenerio based use cases of it 
+ .Also apply CRUD operations in the problems
+ . also go through the material of dsa like big O Notation 
+
+Organized all work under:
+oops-practice/gcr-codebase/addressBook
+
+
 
 
 
