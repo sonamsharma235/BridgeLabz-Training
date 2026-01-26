@@ -220,5 +220,36 @@ Organized all work under:
 dsa-practice/gcr-codebase/linkedlist
 
 
+🔹 Day 29 – 20 january 2026
+
+dsa-practice : 
+ .completed  scenerio based problems 
+ .like-bankingAccount , bookself etc.
+ .Also apply CRUD operations in the problems
+ . used stack , queue, linkedlist in it.
+
+Organized all work under:
+dsa-practice/scenerio-based
+
+🔹 Day 30 – 21 january 2026
+
+collections-practice :
+ .read material of java collections 
+ .completed  problems based on collection frameworks
+
+Organized all work under:
+collections-practice/gcr-codebase/collections
+
+🔹 Day 31 – 22 january 2026
+
+collections-practice :
+ .read material of java stream 
+ .completed  problems based on java stream
+
+Organized all work under:
+collections-practice/gcr-codebase/stream
+
+
+
 
 
