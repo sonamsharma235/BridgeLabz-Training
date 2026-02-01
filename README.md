@@ -249,6 +249,48 @@ collections-practice :
 Organized all work under:
 collections-practice/gcr-codebase/stream
 
+🔹 Day 32 – 27 january 2026
+
+collections-practice :
+ .read material of regex and junit
+ . completed regex assignment 
+ .completed  scenerio-based problem like Lexical Twist
+
+Organized all work under:
+collections-practice/gcr-codebase/regex
+
+🔹 Day 33 – 28 january 2026
+
+collections-practice :
+ .read material of regex and junit
+ . completed regex and junit  assignment 
+ .completed  scenerio-based problem like SonarQube problem
+ .completed  scenerio-based problem like FlipKey logical problem
+ .Also go through with the material of Annotation and Reflection
+
+Organized all work under:
+collections-practice/gcr-codebase/junit
+collections-practice/scenerio-based
+
+🔹 Day 34 – 29 january 2026
+
+collections-practice : 
+ .completed  scenerio-based problem like FutureLogistics problem
+ .Also go through with the material of Annotation and Reflection
+ . completed the assignment of Annotation and Reflection
+
+Organized all work under:
+collections-practice/scenerio-based/futureLogistics
+
+🔹 Day 35 – 30 january 2026
+
+collections-practice : 
+ . go through with the material of CSV Data Handling
+
+
+
+
+
 
 
 
