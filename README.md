@@ -287,6 +287,17 @@ collections-practice/scenerio-based/futureLogistics
 collections-practice : 
  . go through with the material of CSV Data Handling
 
+🔹 Day 36 – 2 february 2026
+
+collections-practice : 
+ . go through with the material of reflection and annotation 
+ . also go through with the csv handling
+ . completed problems of reflection and annotation
+
+Organized all work under:
+collections-practice/gcr-codebase/reflection
+collections-practice/gcr-codebase/annotation
+collections-practice/gcr-codebase/CSV
 
 
 
