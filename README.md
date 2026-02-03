@@ -299,6 +299,18 @@ collections-practice/gcr-codebase/reflection
 collections-practice/gcr-codebase/annotation
 collections-practice/gcr-codebase/CSV
 
+🔹 Day 36 – 3 february 2026
+
+collections-practice : 
+ .completed a scenerio based problem - stream buzz 
+
+dsa-practice:
+ .completed a scenerio based problem - robort hazard auditor 
+
+Organized all work under:
+collections-practice/scenerio-based/StreamBuzz
+dsa-practice/scenerio-based/RobortHazardAuditor
+
 
 
 
