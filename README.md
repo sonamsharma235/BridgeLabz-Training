@@ -591,6 +591,18 @@ Day 52 -(20-02-2026)
 =======
 >>>>>>> 90dd823 ([Sonam Sharma]Refactor. refactore README.md file)
 
+🔹 Day 36 – 3 february 2026
+
+collections-practice : 
+ .completed a scenerio based problem - stream buzz 
+
+dsa-practice:
+ .completed a scenerio based problem - robort hazard auditor 
+
+Organized all work under:
+collections-practice/scenerio-based/StreamBuzz
+dsa-practice/scenerio-based/RobortHazardAuditor
+
 
 
 
