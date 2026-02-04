@@ -603,6 +603,16 @@ Organized all work under:
 collections-practice/scenerio-based/StreamBuzz
 dsa-practice/scenerio-based/RobortHazardAuditor
 
+🔹 Day 36 – 4 february 2026
+io-programming-practice:
+ . learn about json data
+ . also completed based on json data
+ .like- json data in java store, java to json 
+
+Organized all work under:
+ioProgrammingPractice/gcr-codebase/jsonData
+
+
 
 
 
