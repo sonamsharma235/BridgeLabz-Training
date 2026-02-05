@@ -320,6 +320,13 @@ io-programming-practice:
 Organized all work under:
 ioProgrammingPractice/gcr-codebase/jsonData
 
+🔹 Day 37 – 5 february 2026
+dsa-practice:
+ . completed a scenerio-based problem -aerovigile
+
+Organized all work under:
+dsaPractice/scenerio-based/aerovigile
+
 
 
 
