@@ -99,6 +99,19 @@ public class EmpWageBuilder implements IEmpWageBuilder {
 
         company.setTotalWage(totalEmpHours * company.wagePerHour);
     }
+    // useCase 14
+    public int getTotalWage(String companyName) {
+
+    for (CompanyEmpWage company : companyList) {
+
+        if (company.companyName.equals(companyName)) {
+            return company.totalWage;
+        }
+    }
+
+    System.out.println("Company not found!");
+    return -1;
+}
 
     @Override
     public void computeWageForAll() {
@@ -111,11 +124,20 @@ public class EmpWageBuilder implements IEmpWageBuilder {
 
     public static void main(String[] args) {
 
-        IEmpWageBuilder builder = new EmpWageBuilder();
+        public static void main(String[] args) {
 
-        builder.addCompany("TCS", 20, 20, 100);
-        builder.addCompany("Infosys", 25, 22, 120);
+    EmpWageBuilder builder = new EmpWageBuilder();
 
-        builder.computeWageForAll();
+    builder.addCompany("TCS", 20, 20, 100);
+    builder.addCompany("Infosys", 25, 22, 120);
+
+    builder.computeWageForAll();
+
+    System.out.println("TCS Total Wage: "
+            + builder.getTotalWage("TCS"));
+
+    System.out.println("Infosys Total Wage: "
+            + builder.getTotalWage("Infosys"));
+};
     }
 }
