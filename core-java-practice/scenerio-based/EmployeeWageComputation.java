@@ -1,46 +1,79 @@
 import java.util.Random;
+ // useCase 10
+class CompanyEmpWage {
+    
+    public String companyName;
+    public int wagePerHour;
+    public int maxWorkingDays;
+    public int maxWorkingHours;
+    public int totalWage;
 
-public class EmpWageBuilder {
-     
-    //useCase 9
-    // Instance Variables (NOT static)
-    private String company;
-    private int wagePerHour;
-    private int maxWorkingDays;
-    private int maxWorkingHours;
-    private int totalWage;
-
-    public EmpWageBuilder(String company,
+    public CompanyEmpWage(String companyName,
                           int wagePerHour,
                           int maxWorkingDays,
                           int maxWorkingHours) {
 
-        this.company = company;
+        this.companyName = companyName;
         this.wagePerHour = wagePerHour;
         this.maxWorkingDays = maxWorkingDays;
         this.maxWorkingHours = maxWorkingHours;
+        this.totalWage = 0;
     }
 
-    // Method to compute wage
-    public void computeEmployeeWage() {
+    public void setTotalWage(int totalWage) {
+        this.totalWage = totalWage;
+    }
+
+    @Override
+    public String toString() {
+        return "Company: " + companyName +
+               " | Total Wage: " + totalWage;
+    }
+}
+
+public class EmpWageBuilder {
+   
+    private static final int IS_PART_TIME = 1;
+    private static final int IS_FULL_TIME = 2;
+
+    private CompanyEmpWage[] companyArray;
+    private int companyCount = 0;
+
+    public EmpWageBuilder(int numberOfCompanies) {
+        companyArray = new CompanyEmpWage[numberOfCompanies];
+    }
+
+    // Add Company
+    public void addCompany(String name,
+                           int wagePerHour,
+                           int maxWorkingDays,
+                           int maxWorkingHours) {
+
+        companyArray[companyCount++] =
+            new CompanyEmpWage(name, wagePerHour,
+                               maxWorkingDays, maxWorkingHours);
+    }
+
+    // Compute Wage for one company
+    private void computeWage(CompanyEmpWage company) {
 
         int totalEmpHours = 0;
         int totalWorkingDays = 0;
         Random random = new Random();
 
-        while (totalEmpHours < maxWorkingHours &&
-               totalWorkingDays < maxWorkingDays) {
+        while (totalEmpHours < company.maxWorkingHours &&
+               totalWorkingDays < company.maxWorkingDays) {
 
             totalWorkingDays++;
 
-            int empType = random.nextInt(3); // 0,1,2
+            int empType = random.nextInt(3);
             int empHours = 0;
 
             switch (empType) {
-                case 1:
+                case IS_PART_TIME:
                     empHours = 4;
                     break;
-                case 2:
+                case IS_FULL_TIME:
                     empHours = 8;
                     break;
                 default:
@@ -50,33 +83,27 @@ public class EmpWageBuilder {
             totalEmpHours += empHours;
         }
 
-        totalWage = totalEmpHours * wagePerHour;
+        int totalWage = totalEmpHours * company.wagePerHour;
+        company.setTotalWage(totalWage);
     }
 
-    // Getter method
-    public int getTotalWage() {
-        return totalWage;
+    // Compute wage for all companies
+    public void computeWageForAll() {
+        for (int i = 0; i < companyCount; i++) {
+            computeWage(companyArray[i]);
+            System.out.println(companyArray[i]);
+        }
     }
 
-    public String getCompany() {
-        return company;
-    }
-
+    // Main Method
     public static void main(String[] args) {
 
-        EmpWageBuilder tcs =
-            new EmpWageBuilder("TCS", 20, 20, 100);
+        EmpWageBuilder builder = new EmpWageBuilder(3);
 
-        EmpWageBuilder infosys =
-            new EmpWageBuilder("Infosys", 25, 22, 120);
+        builder.addCompany("TCS", 20, 20, 100);
+        builder.addCompany("Infosys", 25, 22, 120);
+        builder.addCompany("Wipro", 18, 25, 110);
 
-        tcs.computeEmployeeWage();
-        infosys.computeEmployeeWage();
-
-        System.out.println("Company: " + tcs.getCompany()
-                + " Total Wage: " + tcs.getTotalWage());
-
-        System.out.println("Company: " + infosys.getCompany()
-                + " Total Wage: " + infosys.getTotalWage());
+        builder.computeWageForAll();
     }
 }
