@@ -328,7 +328,182 @@ dsa-practice:
 Organized all work under:
 dsaPractice/scenerio-based/aerovigile
 
+Day 40 (06-02-2026) – Defining and Implementing Interfaces
+(java8-features-practice)
 
+🔹 Interfaces – Scenario-Based Practice Questions
+
+🔹Defining and Implementing Interfaces
+
+Smart Device Control InterfaceDevices like Lights, AC, and TV implement common control methods.
+Multi-Vehicle Rental System
+Cars, Bikes, and Buses share rental-related operations.
+Digital Payment Interface
+UPI, Credit Card, and Wallet follow a unified payment contract.
+🔹Functional Interfaces
+
+Temperature Alert System
+Used Predicate functional interface for threshold validation.
+String Length Checker
+Function functional interface for character count evaluation.
+Background Job Execution
+Used Runnable functional interface for asynchronous execution- .
+🔹Static Methods in Interfaces
+
+Password Strength Validator
+Centralized password policy validation using static methods.
+Unit Conversion Tool
+Standard unit conversions implemented as static interface methods.
+Date Format Utility
+Common date formatting logic using static interface methods.
+🔹Default Methods in Interfaces Data Export Feature
+
+Payment Gateway IntegrationAdded refund support using default methods without breaking existing implementations.
+Extended export functionality with JSON using default methods.
+Smart Vehicle Dashboard
+Introduced optional battery display feature using default methods.
+🔹Marker Interfaces
+
+Data Serialization for Backup
+Marked classes eligible for backup processing.
+Cloning Prototype Objects
+Enabled object cloning using Cloneable marker interface.
+Sensitive Data Tagging
+Tagged sensitive data classes for encryption using custom marker interface.
+Code Links
+
+functionalInterface
+Day 41 (07-02-2026) – Collections & Stream API Practice
+(java8-features-practice & collections-practice)
+
+🔹 Collections – Scenario-Based Practice
+
+OceanFleet Analytics – Vessel Performance Tracking
+OceanFleet Analytics is a marine research organization that monitors the performance of cargo vessels operating on various routes.
+To improve operational efficiency, a vessel tracking system is implemented using Java Collections to store, retrieve, and analyze vessel performance data.
+The system manages vessel details such as vessel ID, name, type, and average speed, allowing efficient lookups and identification of high-performing vessels.
+🔹 Stream API
+
+Top 5 Trending Movies
+Hospital Doctor Availability
+Insurance Claim Analysis
+Filtering Expiring Memberships
+Transforming Names for Display
+🔹 forEach() Method – Practice Scenarios
+
+Stock Price Logger
+Event Attendee Welcome Message
+IoT Sensor Readings
+Email Notifications
+Logging Transactions
+Code Links
+
+OceanFleet
+StreamAPI
+Day 42 (09-02-2026) – SonarQube Implementation
+(collections-practice)
+
+🔹 Scenario
+
+An organization manages employee leave requests and approvals using Java Collections.
+🔹 Requirements Implemented
+
+Store employees using Map<EmployeeID, Employee>
+Store leave requests using List
+Validate leave balance before approval
+Throw InsufficientLeaveBalanceException
+Approve / reject leave requests using methods
+🔹 SonarQube Integration
+
+Maven-based project
+SonarQube used for static code analysis
+Identified and fixed code smells and maintainability issues
+Code Links
+
+SonarQube
+Day 43 (10-02-2026) – JUnit Scenario-Based Testing
+(collections-practice)
+
+🔹 Scenario
+
+A banking system manages account transactions such as deposits and withdrawals, ensuring correct balance updates and proper exception handling.
+Created a Bank Account class with balance initialization
+Implemented Deposit method to add amount to balance
+Validated negative deposit amounts with exception handling
+Implemented Withdraw method to deduct amount from balance
+Validated insufficient balance scenarios with exceptions
+🔹 JUnit Testing
+
+Maven-based JUnit project structure
+Created unit tests using JUnit framework
+Tested deposit functionality with valid and negative amounts
+Tested withdrawal logic for sufficient and insufficient balance
+Verified balance updates after transactions
+Asserted expected exception messages
+Code Links
+
+BankAccountJunit
+Day 44 (11-02-2026) – Smart Energy Consumption Monitor
+(collections-practice)
+
+🔹 Scenario
+
+A smart home system tracks daily energy consumption readings.
+The system stores and analyzes energy usage data efficiently.
+🔹 Requirements Implemented
+
+Stored energy readings using Map<Date, List>
+Recorded multiple energy readings per day
+Calculated daily average energy consumption
+Calculated monthly average energy consumption
+Implemented InvalidEnergyReadingException for invalid (negative) readings
+Used OOP principles for clean structure and data handling
+Created methods for analysis and reporting
+Code Links
+
+SmartEnergyConsumptionMonitor
+Day 45 (12-02-2026) – Online Auction Bidding System
+(collections-practice)
+
+🔹 Scenario
+
+An online auction platform allows users to place bids on items.
+The system ensures that only valid and higher bids are accepted.
+🔹 Requirements Implemented
+
+Stored bids using TreeMap<User, Double> to maintain sorted order
+Automatically tracked and displayed the highest bid
+Prevented lower bids using validation logic
+Implemented InvalidBidException for invalid or lower bid attempts
+Designed OOP-based structure using:
+AuctionItem class
+Bid class
+User class
+Created methods for bid placement and result display
+Code Links
+
+OnlineAuctionBiddingSystem
+
+Day 46-(13-02-2026) - Online course Enrollement Manager
+  (collection-practice)
+ .in this scenerio we have to maintain enrollemnt details
+ . provide functionalities like: filter enrolment based on specific course, catagory, group     enrollemnt per category , sort and display enrollments by enrollemnt date
+ .Also go through with the material of spring boot
+
+Day 47 -(14-02-2026) 
+  Done two scenerio problems -
+  . disaster relief resource allocation system
+  . smart water tank monitoring system
+  . these are based on the concepts of oops, comparator, exception handling sorting
+
+Day 48 -(16-02-2026)
+ Done with scenerio based problems:
+ . employee wage computationa problem
+ . address book problem
+ .Online Hackathon Submission Evaluator
+ .EV Charging Station Management System
+ . these problems covers the topics like:Map, List, Sorting, oops, Exception Handling, Queue, Interface
+  
 
 
 
