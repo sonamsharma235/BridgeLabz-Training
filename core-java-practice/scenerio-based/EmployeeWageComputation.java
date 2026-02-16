@@ -1,13 +1,28 @@
 import java.util.Random;
 
-public class EmployeeWageComputation {
+public class EmpWageBuilder {
      
-    // useCase 8
-    // Class Method with Parameters
-    public static void computeEmployeeWage(String company,
-                                           int wagePerHour,
-                                           int maxWorkingDays,
-                                           int maxWorkingHours) {
+    //useCase 9
+    // Instance Variables (NOT static)
+    private String company;
+    private int wagePerHour;
+    private int maxWorkingDays;
+    private int maxWorkingHours;
+    private int totalWage;
+
+    public EmpWageBuilder(String company,
+                          int wagePerHour,
+                          int maxWorkingDays,
+                          int maxWorkingHours) {
+
+        this.company = company;
+        this.wagePerHour = wagePerHour;
+        this.maxWorkingDays = maxWorkingDays;
+        this.maxWorkingHours = maxWorkingHours;
+    }
+
+    // Method to compute wage
+    public void computeEmployeeWage() {
 
         int totalEmpHours = 0;
         int totalWorkingDays = 0;
@@ -23,36 +38,45 @@ public class EmployeeWageComputation {
 
             switch (empType) {
                 case 1:
-                    empHours = 4;  // Part Time
+                    empHours = 4;
                     break;
-
                 case 2:
-                    empHours = 8;  // Full Time
+                    empHours = 8;
                     break;
-
                 default:
-                    empHours = 0;  // Absent
+                    empHours = 0;
             }
 
             totalEmpHours += empHours;
         }
 
-        int totalWage = totalEmpHours * wagePerHour;
+        totalWage = totalEmpHours * wagePerHour;
+    }
 
-        System.out.println("Company: " + company);
-        System.out.println("Total Working Days: " + totalWorkingDays);
-        System.out.println("Total Working Hours: " + totalEmpHours);
-        System.out.println("Total Wage: " + totalWage);
-        System.out.println("-----------------------------------");
+    // Getter method
+    public int getTotalWage() {
+        return totalWage;
+    }
+
+    public String getCompany() {
+        return company;
     }
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome To Employee Wage Computation");
+        EmpWageBuilder tcs =
+            new EmpWageBuilder("TCS", 20, 20, 100);
 
-        // Multiple Companies
-        computeEmployeeWage("TCS", 20, 20, 100);
-        computeEmployeeWage("Infosys", 25, 22, 120);
-        computeEmployeeWage("Wipro", 18, 25, 110);
+        EmpWageBuilder infosys =
+            new EmpWageBuilder("Infosys", 25, 22, 120);
+
+        tcs.computeEmployeeWage();
+        infosys.computeEmployeeWage();
+
+        System.out.println("Company: " + tcs.getCompany()
+                + " Total Wage: " + tcs.getTotalWage());
+
+        System.out.println("Company: " + infosys.getCompany()
+                + " Total Wage: " + infosys.getTotalWage());
     }
 }
