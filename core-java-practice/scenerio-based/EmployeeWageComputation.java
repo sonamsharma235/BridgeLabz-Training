@@ -1,4 +1,7 @@
-// useCase 11
+import java.util.ArrayList;
+import java.util.Random;
+
+// useCase 12
 interface IEmpWageBuilder {
 
     void addCompany(String companyName,
@@ -8,7 +11,6 @@ interface IEmpWageBuilder {
 
     void computeWageForAll();
 }
-
 class CompanyEmpWage {
 
     public String companyName;
@@ -46,26 +48,25 @@ public class EmpWageBuilder implements IEmpWageBuilder {
     private static final int IS_PART_TIME = 1;
     private static final int IS_FULL_TIME = 2;
 
-    private CompanyEmpWage[] companyArray;
-    private int companyCount = 0;
+    private ArrayList<CompanyEmpWage> companyList;
 
-    public EmpWageBuilder(int numberOfCompanies) {
-        companyArray = new CompanyEmpWage[numberOfCompanies];
+    public EmpWageBuilder() {
+        companyList = new ArrayList<>();
     }
 
-    // Implemented Method
     @Override
     public void addCompany(String name,
                            int wagePerHour,
                            int maxWorkingDays,
                            int maxWorkingHours) {
 
-        companyArray[companyCount++] =
+        CompanyEmpWage company =
             new CompanyEmpWage(name, wagePerHour,
                                maxWorkingDays, maxWorkingHours);
+
+        companyList.add(company);
     }
 
-    // Private helper method
     private void computeWage(CompanyEmpWage company) {
 
         int totalEmpHours = 0;
@@ -97,21 +98,18 @@ public class EmpWageBuilder implements IEmpWageBuilder {
         company.setTotalWage(totalEmpHours * company.wagePerHour);
     }
 
-    // Implemented Method
     @Override
     public void computeWageForAll() {
 
-        for (int i = 0; i < companyCount; i++) {
-            computeWage(companyArray[i]);
-            System.out.println(companyArray[i]);
+        for (CompanyEmpWage company : companyList) {
+            computeWage(company);
+            System.out.println(company);
         }
     }
 
-    // Main Method
     public static void main(String[] args) {
 
-        IEmpWageBuilder builder =
-            new EmpWageBuilder(3);
+        IEmpWageBuilder builder = new EmpWageBuilder();
 
         builder.addCompany("TCS", 20, 20, 100);
         builder.addCompany("Infosys", 25, 22, 120);
