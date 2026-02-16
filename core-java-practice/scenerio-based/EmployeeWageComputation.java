@@ -1,16 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-// useCase 12
-interface IEmpWageBuilder {
-
-    void addCompany(String companyName,
-                    int wagePerHour,
-                    int maxWorkingDays,
-                    int maxWorkingHours);
-
-    void computeWageForAll();
-}
+// useCase 13
 class CompanyEmpWage {
 
     public String companyName;
@@ -18,6 +9,8 @@ class CompanyEmpWage {
     public int maxWorkingDays;
     public int maxWorkingHours;
     public int totalWage;
+
+    public ArrayList<Integer> dailyWages;
 
     public CompanyEmpWage(String companyName,
                           int wagePerHour,
@@ -29,6 +22,11 @@ class CompanyEmpWage {
         this.maxWorkingDays = maxWorkingDays;
         this.maxWorkingHours = maxWorkingHours;
         this.totalWage = 0;
+        this.dailyWages = new ArrayList<>();
+    }
+
+    public void addDailyWage(int dailyWage) {
+        dailyWages.add(dailyWage);
     }
 
     public void setTotalWage(int totalWage) {
@@ -38,10 +36,11 @@ class CompanyEmpWage {
     @Override
     public String toString() {
         return "Company: " + companyName +
-               " | Total Wage: " + totalWage;
+               "\nDaily Wages: " + dailyWages +
+               "\nTotal Wage: " + totalWage +
+               "\n---------------------------";
     }
 }
-
 
 public class EmpWageBuilder implements IEmpWageBuilder {
 
@@ -60,11 +59,10 @@ public class EmpWageBuilder implements IEmpWageBuilder {
                            int maxWorkingDays,
                            int maxWorkingHours) {
 
-        CompanyEmpWage company =
-            new CompanyEmpWage(name, wagePerHour,
-                               maxWorkingDays, maxWorkingHours);
-
-        companyList.add(company);
+        companyList.add(new CompanyEmpWage(name,
+                                           wagePerHour,
+                                           maxWorkingDays,
+                                           maxWorkingHours));
     }
 
     private void computeWage(CompanyEmpWage company) {
@@ -92,6 +90,10 @@ public class EmpWageBuilder implements IEmpWageBuilder {
                     empHours = 0;
             }
 
+            int dailyWage = empHours * company.wagePerHour;
+
+            company.addDailyWage(dailyWage);  // 🔥 store daily wage
+
             totalEmpHours += empHours;
         }
 
@@ -113,7 +115,6 @@ public class EmpWageBuilder implements IEmpWageBuilder {
 
         builder.addCompany("TCS", 20, 20, 100);
         builder.addCompany("Infosys", 25, 22, 120);
-        builder.addCompany("Wipro", 18, 25, 110);
 
         builder.computeWageForAll();
     }
