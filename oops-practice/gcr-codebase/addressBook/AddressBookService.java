@@ -255,6 +255,79 @@ public class AddressBookService {
         System.out.println(c);   // Calls overridden toString()
     }
 }
+         
+  // ==========================================
+  // UC-12: Sort Contacts by City
+  // ==========================================
+  public void sortByCity(String bookName) {
+
+    AddressBook book = repository.findByName(bookName);
+
+    if (book == null) {
+        System.out.println("Address Book not found!");
+        return;
+    }
+
+    List<Contact> contacts = book.getContacts();
+
+    if (contacts.isEmpty()) {
+        System.out.println("No contacts available to sort.");
+        return;
+    }
+
+    // Using Collection Library (Collections.sort + Comparator)
+    Collections.sort(contacts, new Comparator<Contact>() {
+        @Override
+        public int compare(Contact c1, Contact c2) {
+            return c1.getCity()
+                     .compareToIgnoreCase(c2.getCity());
+        }
+    });
+
+    System.out.println("Contacts Sorted by City:\n");
+
+    for (Contact c : contacts) {
+        System.out.println(c);   // uses overridden toString()
+    }
+}
+        
+
+     // ==========================================
+     // UC-12: Sort Contacts by State
+     // ==========================================
+  public void sortByState(String bookName) {
+
+    AddressBook book = repository.findByName(bookName);
+
+    if (book == null) {
+        System.out.println("Address Book not found!");
+        return;
+    }
+
+    List<Contact> contacts = book.getContacts();
+
+    if (contacts.isEmpty()) {
+        System.out.println("No contacts available to sort.");
+        return;
+    }
+
+    Collections.sort(contacts, new Comparator<Contact>() {
+        @Override
+        public int compare(Contact c1, Contact c2) {
+            return c1.getState()
+                     .compareToIgnoreCase(c2.getState());
+        }
+    });
+
+    System.out.println("Contacts Sorted by State:\n");
+
+    for (Contact c : contacts) {
+        System.out.println(c);
+    }
+}
+     
+    
+
 
     // Display Contacts
     public void displayContacts(String bookName) {
