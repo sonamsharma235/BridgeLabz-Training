@@ -6,7 +6,11 @@ import addressBook.repository.*;
 public class AddressBookService {
 
     private AddressBookRepository repository = new AddressBookRepository();
-    
+    // UC-9: Dictionary for City and State
+    // ===============================
+    private Map<String, List<Contact>> cityMap = new HashMap<>();
+    private Map<String, List<Contact>> stateMap = new HashMap<>();
+
     // useCase 6
     // Create Address Book
     public void createAddressBook(String name) {
@@ -19,41 +23,101 @@ public class AddressBookService {
     }
 
     // Add Contact
-    public void addContact(String bookName, Contact contact) {
+   public void addContact(String bookName, Contact contact) {
 
-        AddressBook book = repository.findByName(bookName);
+    // Get AddressBook from Repository
+    AddressBook book = repository.findByName(bookName);
 
-        if (book == null) {
-            System.out.println("Address Book not found!");
-            return;
+    if (book == null) {
+        System.out.println("Address Book not found!");
+        return;
+    }
+
+    // ==========================================
+    // UC-7: Duplicate Check using contains()
+    // contains() internally calls overridden equals()
+    // ==========================================
+    if (book.getContacts().contains(contact)) {
+        System.out.println("Duplicate Entry! Person already exists.");
+        return;
+    }
+
+    // ==========================================
+    // Validation Section
+    // ==========================================
+    if (String.valueOf(contact.getZip()).length() != 6) {
+        System.out.println("Invalid Zip Code!");
+        return;
+    }
+
+    if (String.valueOf(contact.getPhoneNo()).length() != 10) {
+        System.out.println("Invalid Phone Number!");
+        return;
+    }
+
+    if (!contact.getEmail().contains("@gmail.com")) {
+        System.out.println("Invalid Email!");
+        return;
+    }
+
+    // ==========================================
+    // Add Contact to AddressBook
+    // ==========================================
+    book.getContacts().add(contact);
+
+    // ==========================================
+    // UC-9: Maintain City Dictionary
+    // City → List<Contact>
+    // ==========================================
+    cityMap
+        .computeIfAbsent(contact.getCity().toLowerCase(), k -> new ArrayList<>())
+        .add(contact);
+
+    // ==========================================
+    // UC-9: Maintain State Dictionary
+    // State → List<Contact>
+    // ==========================================
+    stateMap
+        .computeIfAbsent(contact.getState().toLowerCase(), k -> new ArrayList<>())
+        .add(contact);
+
+    System.out.println("Contact Added Successfully!");
+}
+
+    // UC-9: View Persons By City
+    // ===============================
+    public void viewPersonsByCity(String city) {
+
+       List<Contact> persons = cityMap.get(city.toLowerCase());
+
+       if (persons == null || persons.isEmpty()) {
+          System.out.println("No persons found in this city.");
+          return;
+       }
+
+       for (Contact c : persons) {
+          System.out.println("Name: " + c.getFirstName() + " " + c.getLastName());
+          System.out.println("City: " + c.getCity());
+          System.out.println("--------------------------------");
+       }
+    }
+    // ===============================
+    // UC-9: View Persons By State
+    // ===============================
+    public void viewPersonsByState(String state) {
+
+      List<Contact> persons = stateMap.get(state.toLowerCase());
+
+      if (persons == null || persons.isEmpty()) {
+         System.out.println("No persons found in this state.");
+         return;
+       }
+
+       for (Contact c : persons) {
+           System.out.println("Name: " + c.getFirstName() + " " + c.getLastName());
+           System.out.println("State: " + c.getState());
+           System.out.println("--------------------------------");
         }
-
-        // UC-7: Duplicate Check Using Collection Method
-        // Using List.contains() which internally uses equals()
-        // ===============================
-        if (book.getContacts().contains(contact)) {
-            System.out.println("Duplicate Entry! Person already exists in this Address Book.");
-            return;
-        }
-
-        // Validation
-        if (String.valueOf(contact.getZip()).length() != 6) {
-            System.out.println("Invalid Zip!");
-            return;
-        }
-
-        if (String.valueOf(contact.getPhoneNo()).length() != 10) {
-            System.out.println("Invalid Phone Number!");
-            return;
-        }
-
-        if (!contact.getEmail().contains("@gmail.com")) {
-            System.out.println("Invalid Email!");
-            return;
-        }
-
-        book.getContacts().add(contact);
-        System.out.println("Contact Added Successfully!");
     }
 
     // Delete Contact
