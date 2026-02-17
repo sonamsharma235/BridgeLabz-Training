@@ -28,6 +28,14 @@ public class AddressBookService {
             return;
         }
 
+        // UC-7: Duplicate Check Using Collection Method
+        // Using List.contains() which internally uses equals()
+        // ===============================
+        if (book.getContacts().contains(contact)) {
+            System.out.println("Duplicate Entry! Person already exists in this Address Book.");
+            return;
+        }
+
         // Validation
         if (String.valueOf(contact.getZip()).length() != 6) {
             System.out.println("Invalid Zip!");
