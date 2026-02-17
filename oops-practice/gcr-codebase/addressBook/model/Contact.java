@@ -6,20 +6,24 @@ public class Contact {
     private String lastName;
     private String address;
     private String city;
+    private String state;
     private int zip;
     private long phoneNo;
     private String email;
 
     public Contact(String firstName, String lastName, String address,
-                   String city, int zip, long phoneNo, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.zip = zip;
-        this.phoneNo = phoneNo;
-        this.email = email;
-    }
+               String city, String state, int zip,
+               long phoneNo, String email) {
+
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.address = address;
+    this.city = city;
+    this.state = state;  // UC-8
+    this.zip = zip;
+    this.phoneNo = phoneNo;
+    this.email = email;
+}
     
     // UC-7: Override equals() Method
     // Duplicate check based on First Name + Last Name
@@ -66,4 +70,7 @@ public class Contact {
 
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
+
+    public String getState() { return state; }
+    public void setState(String state) { this.state = state; }
 }

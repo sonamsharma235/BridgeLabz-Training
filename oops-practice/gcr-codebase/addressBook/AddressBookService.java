@@ -70,6 +70,61 @@ public class AddressBookService {
         System.out.println("Contact Deleted!");
     }
 
+    // UC-8: Search Person by City Across All Address Books
+  
+    public void searchByCity(String city) {
+
+      boolean found = false;
+
+      for (String bookName : repository.getAllAddressBookNames()) {
+
+         AddressBook book = repository.findByName(bookName);
+
+          for (Contact c : book.getContacts()) {
+
+            if (c.getCity().equalsIgnoreCase(city)) {
+
+                System.out.println("Address Book: " + bookName);
+                System.out.println("Name: " + c.getFirstName() + " " + c.getLastName());
+                System.out.println("City: " + c.getCity());
+                System.out.println("--------------------------------");
+
+                found = true;
+            }
+        }
+    }
+
+    if (!found) {
+        System.out.println("No person found in this city.");
+    }
+}
+    public void searchByState(String state) {
+
+    boolean found = false;
+
+    for (String bookName : repository.getAllAddressBookNames()) {
+
+        AddressBook book = repository.findByName(bookName);
+
+        for (Contact c : book.getContacts()) {
+
+            if (c.getState().equalsIgnoreCase(state)) {
+
+                System.out.println("Address Book: " + bookName);
+                System.out.println("Name: " + c.getFirstName() + " " + c.getLastName());
+                System.out.println("State: " + c.getState());
+                System.out.println("--------------------------------");
+
+                found = true;
+            }
+        }
+    }
+
+    if (!found) {
+        System.out.println("No person found in this state.");
+    }
+}
+
     // Display Contacts
     public void displayContacts(String bookName) {
 

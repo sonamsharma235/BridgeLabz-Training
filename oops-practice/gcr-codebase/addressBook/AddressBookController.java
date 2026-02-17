@@ -19,6 +19,8 @@ public class AddressBookController {
             System.out.println("4. Display Contacts");
             System.out.println("5. Display All Address Books");
             System.out.println("6. Exit");
+			System.out.println("7. Search by City");
+            System.out.println("8. Search by State");
 
             int choice = sc.nextInt();
 
@@ -78,6 +80,16 @@ public class AddressBookController {
                 case 6:
                     System.out.println("Exiting...");
                     return;
+
+				case 7:
+                    System.out.println("Enter City:");
+                    service.searchByCity(sc.next());
+                    break;
+
+                case 8:
+                    System.out.println("Enter State:");
+                    service.searchByState(sc.next());
+                    break;	
             }
         }
     }
