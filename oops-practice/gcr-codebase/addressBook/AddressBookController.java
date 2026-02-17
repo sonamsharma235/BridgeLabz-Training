@@ -23,6 +23,8 @@ public class AddressBookController {
             System.out.println("8. Search by State");
 			System.out.println("9. View Persons by City");
             System.out.println("10. View Persons by State");
+			System.out.println("11. Count By City");
+            System.out.println("12. Count By State");
 
             int choice = sc.nextInt();
 
@@ -100,7 +102,18 @@ public class AddressBookController {
                 case 10:
                     System.out.println("Enter State:");
                     service.viewPersonsByState(sc.next());
-                    break;	
+                    break;
+				
+				case 11:
+                    System.out.println("Enter City:");
+                    service.countByCity(sc.next());
+                    break;
+
+                case 12:
+                    System.out.println("Enter State:");
+                    service.countByState(sc.next());
+                    break;
+
                 }
             }
        }

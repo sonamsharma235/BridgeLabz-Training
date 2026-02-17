@@ -188,6 +188,38 @@ public class AddressBookService {
         System.out.println("No person found in this state.");
     }
 }
+     
+    // ==========================================
+    // UC-10: Count Contacts By City
+    // ==========================================
+    public void countByCity(String city) {
+
+       List<Contact> persons = cityMap.get(city.toLowerCase());
+
+       if (persons == null || persons.isEmpty()) {
+          System.out.println("No persons found in this city.");
+          return;
+       }
+
+       System.out.println("City: " + city + 
+                       " → Total Persons: " + persons.size());
+    }
+
+    // ==========================================
+    // UC-10: Count Contacts By State
+    // ==========================================
+    public void countByState(String state) {
+
+       List<Contact> persons = stateMap.get(state.toLowerCase());
+
+       if (persons == null || persons.isEmpty()) {
+          System.out.println("No persons found in this state.");
+          return;
+        }
+
+        System.out.println("State: " + state + 
+                       " → Total Persons: " + persons.size());
+    }
 
     // Display Contacts
     public void displayContacts(String bookName) {
