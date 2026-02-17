@@ -221,6 +221,41 @@ public class AddressBookService {
                        " → Total Persons: " + persons.size());
     }
 
+    // ==========================================
+    // UC-11: Sort Contacts Alphabetically by Name
+    // ==========================================
+    public void sortContactsByName(String bookName) {
+
+      AddressBook book = repository.findByName(bookName);
+
+      if (book == null) {
+        System.out.println("Address Book not found!");
+        return;
+     }
+
+     List<Contact> contacts = book.getContacts();
+
+     if (contacts.isEmpty()) {
+        System.out.println("No contacts available to sort.");
+        return;
+     }
+
+    // Using Collection Library for Sorting
+    Collections.sort(contacts, new Comparator<Contact>() {
+        @Override
+        public int compare(Contact c1, Contact c2) {
+            return c1.getFirstName()
+                     .compareToIgnoreCase(c2.getFirstName());
+        }
+    });
+
+    System.out.println("Contacts Sorted Alphabetically:\n");
+
+    for (Contact c : contacts) {
+        System.out.println(c);   // Calls overridden toString()
+    }
+}
+
     // Display Contacts
     public void displayContacts(String bookName) {
 

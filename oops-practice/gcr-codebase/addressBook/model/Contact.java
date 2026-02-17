@@ -48,6 +48,20 @@ public class Contact {
         return Objects.hash(firstName.toLowerCase(), lastName.toLowerCase());
     }
 
+    // ==========================================
+    // UC-11: Override toString() to print details
+    // ==========================================
+    @Override
+    public String toString() {
+      return "Name: " + firstName + " " + lastName +
+           ", Address: " + address +
+           ", City: " + city +
+           ", State: " + state +
+           ", Zip: " + zip +
+           ", Phone: " + phoneNo +
+           ", Email: " + email;
+   }
+
     // Getters & Setters
 
     public String getFirstName() { return firstName; }
