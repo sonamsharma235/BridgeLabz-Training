@@ -6,7 +6,8 @@ import addressBook.repository.*;
 public class AddressBookService {
 
     private AddressBookRepository repository = new AddressBookRepository();
-
+    
+    // useCase 6
     // Create Address Book
     public void createAddressBook(String name) {
         if (repository.exists(name)) {
