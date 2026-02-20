@@ -503,6 +503,34 @@ Day 48 -(16-02-2026)
  .Online Hackathon Submission Evaluator
  .EV Charging Station Management System
  . these problems covers the topics like:Map, List, Sorting, oops, Exception Handling, Queue, Interface
+
+Day 49 -(17-02-2026)
+ Done with scenerio based problems:
+ . Online Doctor Consultation Scheduler
+ . Warehouse Cold Storage Temperature Monitor
+ . these problems covers the topics like:Map, List, Sorting, oops, Exception Handling, Queue, Interface 
+
+Day 50 -(18-02-2026)
+ Done with scenerio based problems:
+ . set up the quantity measurement app requisits
+ . completed UC-1 of it that compare two values based on different conditions
+ . these problems covers the topics like:List, oops, Exception Handling, Interface, JUnit
+ . Also completed scenerio based problems:
+   .Railway Platform Allocation System
+   .Digital Subscription Renewal System
+   .these problems covers topics like:Map, PriorityQueue, Comparable, OOP, Exception handling,      OOP, Strategy Pattern, Date handling
+
+Day 51 -(19-02-2026)
+ Done with  UC-2 and UC-3 of quantity measurement problems:
+ . completed UC-2 of it 
+ . completed UC-3 of it
+
+Day 52 -(20-02-2026) 
+
+
+ 
+
+ 
   
 
 
