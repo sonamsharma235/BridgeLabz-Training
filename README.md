@@ -291,6 +291,9 @@ collections-practice :
  . go through with the material of CSV Data Handling
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 90dd823 ([Sonam Sharma]Refactor. refactore README.md file)
 🔹 Day 36 – 2 february 2026
 
 collections-practice : 
@@ -302,6 +305,7 @@ Organized all work under:
 collections-practice/gcr-codebase/reflection
 collections-practice/gcr-codebase/annotation
 collections-practice/gcr-codebase/CSV
+<<<<<<< HEAD
 
 🔹 Day 36 – 3 february 2026
 
@@ -548,6 +552,8 @@ Day 52 -(20-02-2026)
 
 
 >>>>>>> f438fed ([Sonam Sharma]Refactor. refactore README.md file)
+=======
+>>>>>>> 90dd823 ([Sonam Sharma]Refactor. refactore README.md file)
 
 
 
